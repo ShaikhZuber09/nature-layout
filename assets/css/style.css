@@ -12,7 +12,8 @@ body {
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  color: #777; }
 
 .text-center {
   text-align: center; }
@@ -36,6 +37,30 @@ body {
   100% {
     transform: translateX(0rem);
     opacity: 1; } }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+  letter-spacing: .2rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all .4s ease-in-out; }
+  .heading-secondary:hover, .heading-secondary:focus {
+    transform: scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tert {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 2rem; }
+
+.para {
+  font-size: 1.6rem; }
+  .para:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .header {
   height: 95vh;
@@ -87,40 +112,52 @@ body {
   padding: 0 1.5rem; }
 
 .col-1 {
-  flex: 0 0 calc(100% * 1 / 12); }
+  flex: 0 0 calc(100% * 1 / 12);
+  width: calc(100% * 1 / 12); }
 
 .col-2 {
-  flex: 0 0 calc(100% * 2 / 12); }
+  flex: 0 0 calc(100% * 2 / 12);
+  width: calc(100% * 2 / 12); }
 
 .col-3 {
-  flex: 0 0 calc(100% * 3 / 12); }
+  flex: 0 0 calc(100% * 3 / 12);
+  width: calc(100% * 3 / 12); }
 
 .col-4 {
-  flex: 0 0 calc(100% * 4 / 12); }
+  flex: 0 0 calc(100% * 4 / 12);
+  width: calc(100% * 4 / 12); }
 
 .col-5 {
-  flex: 0 0 calc(100% * 5 / 12); }
+  flex: 0 0 calc(100% * 5 / 12);
+  width: calc(100% * 5 / 12); }
 
 .col-6 {
-  flex: 0 0 calc(100% * 6 / 12); }
+  flex: 0 0 calc(100% * 6 / 12);
+  width: calc(100% * 6 / 12); }
 
 .col-7 {
-  flex: 0 0 calc(100% * 7 / 12); }
+  flex: 0 0 calc(100% * 7 / 12);
+  width: calc(100% * 7 / 12); }
 
 .col-8 {
-  flex: 0 0 calc(100% * 8 / 12); }
+  flex: 0 0 calc(100% * 8 / 12);
+  width: calc(100% * 8 / 12); }
 
 .col-9 {
-  flex: 0 0 calc(100% * 9 / 12); }
+  flex: 0 0 calc(100% * 9 / 12);
+  width: calc(100% * 9 / 12); }
 
 .col-10 {
-  flex: 0 0 calc(100% * 10 / 12); }
+  flex: 0 0 calc(100% * 10 / 12);
+  width: calc(100% * 10 / 12); }
 
 .col-11 {
-  flex: 0 0 calc(100% * 11 / 12); }
+  flex: 0 0 calc(100% * 11 / 12);
+  width: calc(100% * 11 / 12); }
 
 .col-12 {
-  flex: 0 0 calc(100% * 12 / 12); }
+  flex: 0 0 calc(100% * 12 / 12);
+  width: calc(100% * 12 / 12); }
 
 .btn, .btn:link, .btn:visited {
   padding: 1rem 4rem;
@@ -159,3 +196,58 @@ body {
 .btn:active {
   transform: translateY(-0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn-text, .btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #55c57a;
+  padding: 0.3rem;
+  display: inline-block;
+  text-transform: capitalize;
+  transition: all .3s ease-in-out;
+  border-bottom: 1px solid #55c57a; }
+  .btn-text span, .btn-text:link span, .btn-text:visited span {
+    display: inline-block;
+    transition: all .3s ease-in-out; }
+
+.btn-text:hover, .btn-text:focus {
+  background-color: #55c57a;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn-text:hover > span, .btn-text:focus > span {
+    transform: translateX(3px); }
+
+.btn-text:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.composition {
+  position: relative; }
+  .composition-img {
+    width: 60%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    transition: all .4s ease-in-out; }
+    .composition-img-1 {
+      top: -2rem;
+      left: 0; }
+    .composition-img-2 {
+      top: 2rem;
+      right: 0; }
+    .composition-img-3 {
+      top: 10rem;
+      left: 20%; }
+    .composition-img:hover, .composition-img:focus {
+      transform: scale(1.1);
+      z-index: 10;
+      outline: 15px solid #55c57a;
+      outline-offset: 15px; }
+  .composition:hover .composition-img:not(:hover), .composition:focus .composition-img:not(:hover) {
+    transform: scale(0.9); }
+
+.section-about {
+  padding: 25rem 0;
+  background-color: #f7f7f7;
+  margin-top: -20rem; }
