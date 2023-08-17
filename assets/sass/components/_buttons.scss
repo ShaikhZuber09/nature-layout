@@ -31,6 +31,24 @@
         }
     }
 
+    &-green{
+        background-color: $color-primary-dark;
+        color: $color-white;
+
+        &::before{
+            content: "";
+            background-color: $color-primary-dark;
+            position: absolute;
+            top:0 ;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            border-radius: 10rem;
+            transition: all .4s ease-in-out;
+        }
+    }
+
     &:hover,
     &:focus{
         transform: translateY(-.3rem);
