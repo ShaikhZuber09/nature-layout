@@ -4,10 +4,15 @@
     background-color: rgba($color-white, 0.6);
     padding: 6rem;
     transform: skewX(-12deg);
-
+@include responsive(phone){
+    transform: skewX(0);
+    width: 100%;
+}
     >* {
         transform: skewX(12deg);
-
+        @include responsive(phone){
+            transform: skewX(0);
+        }
     }
 
     &-shape {

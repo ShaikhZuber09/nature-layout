@@ -9,6 +9,7 @@
         transform: translateY(-1.5rem) scale(1.05);
     }
     i{
+        padding-top: 8px;
         font-size: 6rem;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;

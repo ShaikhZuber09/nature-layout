@@ -4,6 +4,14 @@
 padding: 25rem 0;
 background-color: $color-grey-light-1;
 margin-top: -20rem;
+
+@include responsive(phone){
+    .col-6{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    padding-bottom: 35rem;
+}
 } 
 
 .section-feature{
@@ -19,12 +27,45 @@ margin-top: -20rem;
     >*{
         transform: skewY(7deg);
     }
+@include responsive(tabPort){
+    .col-3{
+        flex: 0 0 50%;
+        width: 50%;
+    margin-bottom: 2rem;
+
+    }
+}
+
+    @include responsive(phone){
+        margin-top: -4rem;
+        .col-3{
+            flex: 0 0 100%;
+            width: 100%;
+        margin-bottom: 2rem;
+
+        }
+    }
 } 
 
 .section-tours{
     padding: 25rem 0 15rem;
     margin-top: -10rem;
     background-color: $color-grey-light-1;
+    @include responsive(tabPort){
+        .col-4{
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+            flex: 0 0 100%;
+            width: 100%;
+        }
+    }
+    // @include responsive(phone){
+    //     .col-4{
+    //         flex: 0 0 100%;
+    //         width: 100%;
+    //     }
+    //}
 }
 
 .section-stories{

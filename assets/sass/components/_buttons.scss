@@ -60,7 +60,7 @@
     }
 
     &:active{
-        transform: translateY(-.1);
+        transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-dark,.2);
     }
 
@@ -69,7 +69,7 @@
 .btn-text{
     &,
     &:link,
-    &:visited{
+    &:visited{ 
 font-size: 1.6rem;
 text-decoration: none;
 color: $color-primary;

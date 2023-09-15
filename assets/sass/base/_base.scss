@@ -8,7 +8,17 @@
 
 html{
     font-size: 10px;
-}
+
+    @include responsive(tabLand){
+        font-size: 56%;
+    }
+    @include responsive(tabPort){
+        font-size: 53%;
+    }
+    @include responsive(phone){
+        font-size: 50%;
+    }
+} 
 ::selection{
     color: $color-white;
     background-color: $color-primary-dark;
@@ -19,4 +29,7 @@ body{
     padding: 3rem;
     font-family: 'Lato', sans-serif;
     color: $color-grey-dark;
+    @include responsive(phone){
+        padding: 0;
+    }
 }
